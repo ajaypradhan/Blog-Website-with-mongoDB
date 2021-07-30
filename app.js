@@ -22,6 +22,14 @@ mongoose.connect('mongodb://localhost:27017/blogDB', {
     useUnifiedTopology: true,
 });
 
+mongoose.connect(
+    'mongodb+srv://demo:qwerty12345@cluster0.yegrn.mongodb.net//blogDB',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    }
+);
+
 const postSchema = {
     title: String,
     content: String,
